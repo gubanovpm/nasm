@@ -3,5 +3,7 @@
 1) NASM  
     K-FPU; 
     P-Коровы.
-3) ARM
+2) ARM
     abs.
+3) Библиотекари
+    dll
