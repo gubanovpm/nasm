@@ -97,7 +97,6 @@ int main() {
 							a2 += num2[l2 - g - 1] * h[g];
 						for (int g = 0; g < l3; g++)
 							a3 += num3[l3 - g - 1] * h[g];
-						//printf("%lld + %lld ? %lld\n", a1, a2, a3);
 						if (a1 + a2 == a3) {
 							ss_t[x] = j;
 							x++;
@@ -106,8 +105,6 @@ int main() {
 					}
 				}
 			}
-			//for (int j = 0; j < 38; j++) if (ss_t[j] == 1) printf("%d ", j); printf("\n");
-			//printf("; mn_ss = %d, fnz = %d, lnz = %d\n", mn_ss, fnz, lnz);
 		}
 		else {
 			int res[20];
@@ -130,7 +127,6 @@ int main() {
 			}
 			for (int j = 0; j < l3; j++) {
 				res[j] -= num3[l3 - j - 1];
-				//printf("%d \n", res[j]);
 			}
 			int fnz = 0, lnz = 0;
 			for (int j = 0; j < 20; j++)
@@ -143,8 +139,6 @@ int main() {
 					lnz = j;
 			if (fnz == lnz && res[fnz] == 0)
 				fl *= 1;
-			//printf("!!!\n");
-			//printf("%d / %d\n", res[fnz], res[lnz]);
 			if (res[fnz] != 0) {
 				fl1 = 0;
 				fl = 0;
@@ -173,8 +167,6 @@ int main() {
 					}
 				}
 			}
-			//for (int j = 0; j < l1 + l2 - 1; j++) printf("%d ", res[j]);
-			//printf("\n");
 		}
 		for (int j = 0; j < x_res; j++) {
 			int f = 0;
